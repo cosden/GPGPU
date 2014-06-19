@@ -1,0 +1,28 @@
+#include "cuda_runtime.h"
+#include "pgi_cuda_runtime.h"
+extern "C" __global__ __launch_bounds__(256) void
+main_21_gpu(
+    signed char* p2/* b */,
+    signed char* p3/* a */,
+    signed char* p4/* c */)
+{
+int _i_1;
+unsigned int _ui_1;
+int j47;
+int j46;
+int j44;
+j44 = 1000000;
+j46 = 0;
+j47 = 0;
+_BB_18: ;
+if( (((-1000000)+(j47))>=0)) goto _BB_23;
+if( (((((int)((((int)blockIdx.x)*(256))+((int)threadIdx.x)))+(j47))+(-1000000))>=0)) goto _BB_23;
+_i_1 = ((int)((((int)blockIdx.x)*(1024))+(((int)threadIdx.x)*(4))))+(j46);
+*( int*)((p4/* c */)+((long long)(_i_1))) = (*( int*)((p2/* b */)+((long long)(_i_1))))+(*( int*)((p3/* a */)+((long long)(_i_1))));
+_BB_23: ;
+_ui_1 = ((int)gridDim.x)*(256);
+j44 = (j44)+(-((int)(_ui_1)));
+j46 = (j46)+((int)(((int)gridDim.x)*(1024)));
+j47 = (j47)+((int)(_ui_1));
+if( ((j44)>0)) goto _BB_18;
+}
