@@ -1,0 +1,477 @@
+    1  w
+    2  lt
+    3  mkdir .ssh
+    4  cd .ssh/
+    5  ls
+    6  e authorized_keys
+    7  exit
+    8  ls
+    9  lt
+   10  cd .ssh/
+   11  ls
+   12  cd ..
+   13  rm -r .ssh/
+   14  exit
+   15  module list
+   16  module avail
+   17  module load cudatoolkit
+   18  module list
+   19  cd lab1/
+   20  ls
+   21  nvcc sample.cu 
+   22  ls
+   23  ./a.out 
+   24  aprun ./a.out 
+   25  nvidia-smi
+   26  aprun ./a.out 
+   27  exit
+   28  cd lab2/
+   29  ls
+   30  module load cudatoolkit
+   31  aprun ./a.out 
+   32  aprun ./lab2-2-sol.out 
+   33  ls
+   34  vi lab2-1.cu 
+   35  nvcc lab2-1.cu -o lab2.out
+   36  aprun ./lab2.out 
+   37  vi lab2-1.cu 
+   38  e lab2-1.cu 
+   39  nvcc lab2-1.cu -o lab2.out
+   40  e lab2-1.cu 
+   41  nvcc lab2-1.cu -o lab2.out
+   42  aprun ./lab2.out 
+   43  e ~/.emacs
+   44  e lab2-1.cu
+   45  nvcc lab2-1.cu -o lab2.out
+   46  aprun ./lab2.out 
+   47  e lab2-1.cu
+   48  e lab2-2.cu 
+   49  ls
+   50  nvcc lab2-2.cu -o lab2-2.out
+   51  e lab2-2.cu 
+   52  nvcc lab2-2.cu -o lab2-2.out
+   53  aprun ./lab2-2.out 
+   54  e lab2-2.cu 
+   55  e lab2-2.cu
+   56  nvcc lab2-2.cu -o lab2-2.out
+   57  aprun ./lab2-2.out 
+   58  exit
+   59  w
+   60  showq --version
+   61  showq -r
+   62  vim .bashrc 
+   63  ls
+   64  cd bin/
+   65  ls
+   66  cd ../scratch/
+   67  ls
+   68  cd ..
+   69  showq
+   70  showq -R
+   71  ls
+   72  wget http://go.iu.edu/cn7
+   73  ls
+   74  tar -xvf lab-material.tar.gz 
+   75  ls
+   76  w
+   77  qsub -I -l nodes=1:ppn=16:xk -l walltime=01:30:00
+   78  qstat -u tra591
+   79  showq -r
+   80  ls
+   81  cd lab2/
+   82  ls
+   83  e lab2-1.cu 
+   84  source ~/.bashrc
+   85  e lab2-1.cu 
+   86  e lab2-1-solution.cu 
+   87  ls
+   88  cd ..
+   89  ls
+   90  cd lab1/
+   91  ls
+   92  e sample.cu 
+   93  e ~/.emacs
+   94  cd
+   95  cp .emacs .emacs.bak
+   96  e .emacs
+   97  cd lab1
+   98  e sample.cu 
+   99  vim sample.cu 
+  100  emacs -nw sample.cu 
+  101  cd
+  102  e .emacs
+  103  ls
+  104  cd lab2/
+  105  ls
+  106  vim lab2-1.cu 
+  107  vim lab2-2.cu 
+  108  vim lab2-1.cu 
+  109  vim lab2-1-solution.cu 
+  110  vim lab2-1.cu 
+  111  module load cudatoolkit
+  112  ls
+  113  nvcc lab2-1-solution.cu lab2-2-solution.cu 
+  114  nvcc lab2-1-solution.cu
+  115  ls
+  116  nvcc lab2-2-solution.cu 
+  117  nvcc lab2-2-solution.cu -o lab2-2-sol.out
+  118  nvcc lab2-1-solution.cu -o lab2-1-sol.out
+  119  qsub -I -l nodes=1:ppn=16:xk -l walltime=01:30:00
+  120  exit
+  121  cd lab1/
+  122  ls
+  123  vim sample.cu 
+  124  cd ../lab2/
+  125  ls
+  126  vim lab2-1-solution.cu 
+  127  e lab2-1-solution.cu 
+  128  e lab2-2-solution.cu 
+  129  exit
+  130  ls
+  131  cd lab3/
+  132  ls
+  133  module load cudatoolkit
+  134  ls
+  135  nvcc lab3-1.cu
+  136  aprun ./a.out 
+  137  e lab3-1
+  138  e lab3-1.cu
+  139  nvcc lab3-1.cu
+  140  e lab3-1.cu
+  141  nvcc lab3-1.cu
+  142  e lab3-1.cu
+  143  nvcc lab3-1.cu
+  144  e lab3-1.cu
+  145  nvcc lab3-1.cu
+  146  e lab3-1.cu
+  147  nvcc lab3-1.cu
+  148  e lab3-1.cu
+  149  nvcc lab3-1.cu
+  150  e lab3-1.cu
+  151  nvcc lab3-1.cu
+  152  e lab3-1.cu
+  153  nvcc lab3-1.cu
+  154  aprun ./a.out 
+  155  ls
+  156  e lab3-2.cu 
+  157  e lab3-1.cu
+  158  nvcc lab3-1.cu
+  159  aprun ./a.out 
+  160  e lab3-1.cu
+  161  e ~/.bashrc 
+  162  source ~/.bashrc
+  163  ls
+  164  e lab3-2.cu 
+  165  nvcc lab3-2-solution.cu -o sol.out
+  166  aprun ./sol.out 
+  167  ls
+  168  exit
+  169  showq -r
+  170  cd lab3/
+  171  ls
+  172  e lab3-1.cu 
+  173  e lab3-1-solution.cu 
+  174  source ~/.bashrc
+  175  e lab3-2-solution.cu 
+  176  e lab3-1.cu
+  177  e lab3-2-solution.cu 
+  178  ls
+  179  cd ..
+  180  ls
+  181  cd lab4
+  182  ls
+  183  e lab4-1.cu 
+  184  ls ../
+  185  ls
+  186  e lab4-1-solution.cu 
+  187  cd ..
+  188  cd -
+  189  cd ..
+  190  find . | xargs -s "align"
+  191  find . | xargs grep -s "align"
+  192  w
+  193  cd lab4/
+  194  ls
+  195  e lab4-1-solution.cu 
+  196  cd ..
+  197  find . | xargs grep -si "pitch"
+  198  cd lab4/
+  199  ls
+  200  e lab4-1-solution.cu 
+  201  nvcc lab4-1-solution.cu -o sol.out
+  202  e lab4-1-solution.cu 
+  203  exit
+  204  cd lab4/
+  205  ls
+  206  e lab4-1.cu 
+  207  module load cudatoolkit
+  208  nvcc lab4-1.cu
+  209  e lab4-1.cu 
+  210  nvcc lab4-1.cu
+  211  e lab4-1.cu 
+  212  nvcc lab4-1.cu
+  213  e lab4-1.cu 
+  214  nvcc lab4-1.cu
+  215  aprun ./a.out 
+  216  e lab4-1.cu 
+  217  nvcc lab4-1-solution.cu sol.out
+  218  nvcc lab4-1-solution.cu -o sol.out
+  219  aprun ./sol.out 
+  220  e lab4-1.cu 
+  221  nvcc lab4-1.cu
+  222  aprun ./a.out 
+  223  e lab4-1.cu 
+  224  nvcc lab4-1.cu
+  225  aprun ./a.out 
+  226  e lab4-1.cu 
+  227  exit
+  228  cd lab3/
+  229  ls
+  230  e lab3-1.cu 
+  231  qsub -I -l nodes=1:ppn=16:xk -l walltime=01:30:00
+  232  w
+  233  qsub -I -l nodes=1:ppn=16:xk -l walltime=05:30:00
+  234  exit
+  235  w
+  236  cd lab5/
+  237  ls
+  238  e lab5-1.cu 
+  239  exit
+  240  top
+  241  top u tra591
+  242  nvidia-smi
+  243  ls
+  244  top u tra591
+  245  exit
+  246  module load cudatoolkit
+  247  cd lab5/
+  248  ls
+  249  e lab5-1.cu 
+  250  e lab5-1-solution.cu 
+  251  w
+  252  e lab5-1.cu 
+  253  nvcc lab5-1.cu
+  254  aprun ./a.out 
+  255  nvcc lab5-1-solution.cu -o sol.out
+  256  aprun ./a.out 
+  257  ls
+  258  e lab5-2.cu 
+  259  e lab5-2-solution-atomics.cu 
+  260  cp sol.out sol-1.out
+  261  nvcc lab5-2-solution-atomics.cu -o sol-2.out
+  262  head lab5-2-solution-atomics.cu 
+  263  nvcc lab5-2-solution-atomics.cu -o sol-2.out -arch=sm_20 
+  264  aprun ./sol-2.out 
+  265  ls
+  266  e lab5-1.cu
+  267  diff lab5-1.cu lab5-1-solution.cu 
+  268  e lab5-1.cu
+  269  nvcc lab5-1.cu
+  270  aprun ./a.out 
+  271  e lab5-1-solution.cu 
+  272  nvcc lab5-1-solution.cu -o sol1.out
+  273  aprun ./sol1.out 
+  274  less /proc/cpuinfo
+  275  module avail
+  276  ls
+  277  e lab5-2.cu 
+  278  nvcc lab5-2-ian.cu
+  279  nvcc lab5-2-ian.cu -arch=sm_20
+  280  e lab5-2.cu 
+  281  e lab5-2-ian.cu
+  282  nvcc lab5-2-ian.cu -arch=sm_20
+  283  e lab5-2-ian.cu
+  284  nvcc lab5-2-ian.cu -arch=sm_20
+  285  e lab5-2-ian.cu
+  286  nvcc lab5-2-ian.cu -arch=sm_20
+  287  aprun ./a.out 
+  288  e lab5-2-ian.cu
+  289  nvcc lab5-2-ian.cu -arch=sm_20
+  290  aprun ./a.out 
+  291  e lab5-2-ian.cu
+  292  nvcc lab5-2-ian.cu -arch=sm_20
+  293  aprun ./a.out 
+  294  echo $?
+  295  man nvcc
+  296  nvcc --version
+  297  ls
+  298  cd ../lab6/
+  299  s
+  300  ls
+  301  e Makefile 
+  302  e helper_cuda.h 
+  303  e helper_string.h 
+  304  e lab6.cu 
+  305  exit
+  306  qsub -I -l nodes=1:ppn=16:xk -l walltime=05:30:00
+  307  exit
+  308  cd lab5/
+  309  ls
+  310  e lab5-1.cu 
+  311  w
+  312  e lab5-1.cu 
+  313  ssh nid25433
+  314  w
+  315  e lab5-1-solution.cu 
+  316  ssh nid25433
+  317  cd ..
+  318  ls
+  319  cd lab5
+  320  ls
+  321  e lab5-2.cu 
+  322  e lab5-2-solution-atomics.cu 
+  323  module load cudatoolkit
+  324  cd lab6
+  325  make
+  326  ls
+  327  aprun ./lab6
+  328  make
+  329  aprun ./lab6
+  330  qsub -I -l nodes=1:ppn=16:xk -l walltime=05:30:00
+  331  qsub -I -l nodes=1:ppn=16:xk -l walltime=01:30:00
+  332  cd lab5/
+  333  ls
+  334  e lab5-2-solution-atomics.cu 
+  335  cd ../lab6/
+  336  ls
+  337  e Makefile 
+  338  e lab6.cu 
+  339  module switch PrgEnv-cray PrgEnv-pgi
+  340  cd lab7/
+  341  ls
+  342  e lab7-1.cu 
+  343  pgcc -acc -ta=nvidia:5.5,kepler -Minfo=accel lab7-1.cu
+  344  cp lab7-1.cu lab7-1.c
+  345  pgcc -acc -ta=nvidia:5.5,kepler -Minfo=accel lab7-1.c
+  346  aprun ./a.out 
+  347  e Makefile 
+  348  e lab7-2.c 
+  349  make
+  350  e lab7-2.c 
+  351  make
+  352  module list
+  353  module list | grep cuda
+  354  module list > grep cuda
+  355  e lab7-2.c
+  356  time aprun ./a.out 
+  357  e lab7-2.c
+  358  ls
+  359  pgcc -acc -ta=nvidia:5.5,kepler -Minfo=accel -ta=keepgpu lab7-1.c
+  360  pgcc -acc -ta=nvidia:5.5,kepler,keepgpu -Minfo=accel lab7-1.c
+  361  lt
+  362  e lab7-1.n001.gpu 
+  363  ls
+  364  e lab7-1.c
+  365  e lab7-2.c
+  366  diff lab7-2.c lab7-2-solution.c 
+  367  make
+  368  aprun ./a.out 
+  369  e Makefile 
+  370  make
+  371  aprun ./a.out 
+  372  ls
+  373  lt
+  374  e lab7-2.c
+  375  e lab7-2-solution.c 
+  376  module list
+  377  e Makefile
+  378  module switch PrgEnv-cray PrgEnv-pgi
+  379  module load cudatoolkit
+  380  make
+  381  aprun ./lab7-2
+  382  e Makefile
+  383  make
+  384  aprun ./lab7-2
+  385  lt
+  386  e Makefile
+  387  make
+  388  aprun ./lab7-2
+  389  cd lab7/
+  390  ls
+  391  e lab7-1-solution.cu 
+  392  cd lab7/
+  393  ls
+  394  qsub -I -l nodes=1:ppn=16:xk -l walltime=01:30:00
+  395  cd lab8/
+  396  ls
+  397  e lab8-1-solution.c 
+  398  diff lab8-1.c lab8-1-solution.c 
+  399  ls
+  400  e lab8-1.c 
+  401  e lab8-2-solution.c 
+  402  diff lab8-2.c lab8-2-solution.c 
+  403  e lab8-2-solution.c 
+  404  sftp icosden@tigressdata.princeton.edu
+  405  cd ..
+  406  git init *
+  407  git init
+  408  git add *
+  409  git commit -m "first push of gpgpu course work"
+  410  git remote add origin https://github.com/cosden/GPGPU.git
+  411  git push -u origin master
+  412  e lab8-2-solution.c 
+  413  cd -
+  414  e lab8-2-solution.c 
+  415  cd ..
+  416  exit
+  417  module switch PrgEnv-cray PrgEnv-pgi
+  418  cd lab8/
+  419  ls
+  420  e Makefile 
+  421  make
+  422  e Makefile 
+  423  make
+  424  lt
+  425  aprun ./lab8-1
+  426  make
+  427  aprun ./lab8-1
+  428  make
+  429  aprun ./lab8-1
+  430  make
+  431  aprun ./lab8-1
+  432  make
+  433  aprun ./lab8-1
+  434  make
+  435  aprun ./lab8-1
+  436  make
+  437  aprun ./lab8-1
+  438  e lab8-2.c 
+  439  e Makefile
+  440  make
+  441  lt
+  442  e Makefile
+  443  make
+  444  aprun ./lab8-1
+  445  aprun ./lab8-2
+  446  e Makefile
+  447  make
+  448  aprun ./lab8-2
+  449  make
+  450  aprun ./lab8-2
+  451  make
+  452  aprun ./lab8-2
+  453  make
+  454  aprun ./lab8-2
+  455  cd ..
+  456  sftp icosden@tigressdata.princeton.edu
+  457  make
+  458  cd -
+  459  make
+  460  aprun ./lab8-2
+  461  make
+  462  aprun ./lab8-2
+  463  make
+  464  aprun ./lab8-2
+  465  make
+  466  aprun ./lab8-2
+  467  exit
+  468  qsub -I -l nodes=1:ppn=16:xk -l walltime=01:30:00
+  469  exit
+  470  cd lab8/
+  471  ls
+  472  cd ../lab9
+  473  ls
+  474  cd ..
+  475  ls
+  476  history | less
+  477  history > history.out
